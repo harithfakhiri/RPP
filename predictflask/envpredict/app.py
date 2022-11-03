@@ -10,11 +10,11 @@ def index():
     if (request.method == 'GET'):
         global pred
 
-        if pred == 0:
+        if pred == 1:
             pred_result = "You Got a Malignant"
             desc = "Malignant neoplasms are cancerous tumors. They develop when cells grow and divide more than they should. Malignant neoplasms can spread to nearby tissues and to distant parts of your body. Treatment options may include surgery, chemotherapy or radiation therapy. Early detection is key, so be sure to attend all recommended cancer screenings."
             info = "for more info, visit : https://my.clevelandclinic.org/health/diseases/22319-malignant-neoplasm"
-        elif pred == 1:
+        elif pred == 0:
             pred_result = "You Got a Benign"
             desc="A benign tumor is an abnormal but noncancerous collection of cells. It can form anywhere on or in your body when cells multiply more than they should or don’t die when they should. A benign tumor is not malignant. It grows more slowly, has even borders and doesn’t spread to other parts of your body. Many benign tumors don’t require treatment."
             info = "for more info, visit : https://my.clevelandclinic.org/health/diseases/22121-benign-tumor"
