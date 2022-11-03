@@ -5,7 +5,7 @@ import sys
 app = Flask(__name__)
 pred = -1
 
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/index', methods=['GET', 'POST'])
 def index():
     if (request.method == 'GET'):
         global pred
@@ -29,6 +29,10 @@ def index():
         pred = prediction('./predictflask/envpredict/finalized_model.sav', arr_input)
         # print(pred, file=sys.stdout)
     return redirect(url_for('index'))
+
+@app.route('/')
+def landing():
+    return render_template('landing.html')
 
 if __name__ == '__main__':
     app.run(debug=True)

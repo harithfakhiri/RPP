@@ -1,0 +1,35 @@
+@import url("http://fonts.cdnfonts.com/css/athelas");
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.btn_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Athelas", sans-serif;
+}
+
+.png_container {
+  width: 100%;
+}
+
+.check_btn {
+  cursor: pointer;
+
+  font-size: 28px;
+  font-weight: 500;
+
+  border: 1px solid black;
+  padding: 3px;
+
+  border-radius: 5px;
+}
+
+.doc_png {
+  width: 100%;
+}
