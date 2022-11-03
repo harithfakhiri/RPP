@@ -5,11 +5,17 @@ body {
   font-family: sans-serif;
 }
 
+.landing_screen {
+  background-image: url("../img/doc.png");
+  background-size: cover;
+  height: 100vh;
+}
+
 .btn_container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
+  width:fit-content;
+  top: 25%;
+  left: 18%;
 
   font-family: "Athelas", sans-serif;
 }
@@ -19,6 +25,7 @@ body {
 }
 
 .check_btn {
+
   cursor: pointer;
 
   font-size: 28px;

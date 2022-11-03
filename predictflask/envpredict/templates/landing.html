@@ -11,18 +11,18 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="title">
-      <div class="png_container">
-        <img
-          class="doc_png"
-          src="{{ url_for('static', filename='img/doc.png')}}"
-        />
-      </div>
+    <div class="landing_screen">
       <div class="btn_container">
         <div class="check_btn" onclick="location.href='{{ url_for('index') }}'">
           Check Your Status!
         </div>
       </div>
+      <!-- <div class="png_container">
+        <img
+          class="doc_png"
+          src="{{ url_for('static', filename='img/doc.png')}}"
+        />
+      </div> -->
     </div>
   </body>
 </html>
